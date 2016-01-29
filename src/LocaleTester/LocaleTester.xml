@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="LocaleTester.widget.LocaleTester" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>LocaleTester</name>
+    <description>Automatically store the locale and timezone from the browser into an attribute.</description>
+
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAYAAAADU1RxAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJT
+        UUH4AEdAgMRB5qwjwAABMBJREFUSMfVlltsVFUYhb99bnNmptMW2qEFioZbkVsMmEqBGCGGaIK3iMCDUCUmJqLh0fjEiwkPGo3xwSejRE
+        yEGAK8GUBTL+GiYtTaUitQLVDGQjvtdJjOmTl7/z7MTG2lgNEY40p2zsP5z3/Wv9baZx8oY/PWTfxXUJu3buKjAwd5ZOP6RXcsXPmAE4m
+        3AgljdFoXg+5MOvXthQvnLo8MD/d3dnSP/CskALY98/Tb81q2Pt89kuRaPko+X8C3Q2riFi9uSFDvj9HZ1Un3T92kh4balVKnUSqlw3BO/
+        5X+PYcOHhn8JyQcgOnJpuYPv7zG9DoPv8bDUoZ8ISSTDei7lCM+22NR810sW7ocz/PW+b6/zvM8stlR2nZsf+O2b1m0G7IBVEdYt2EZ7W9
+        tuZEEgFUS5dayqVKN1powDDHaoP7Cc09saRlIxLwqbcT7vie1CThyAwlBmNRLWYjlohEs28Z1PVzXwbbtSc1l3NBb47H7F/nK9aI1UYdPv
+        +61prRj0rT5QVqj+3l4fZbG+nqUU0tYzDM6WODSFaEvFUGsuSxbupjGhiQnT/WNh3V72+Nq3/uH5c89RQQTGkItqIqcU5FQ5dk21uxm147
+        riDsfJxLDdmvQoY0ympa7syi5SiHo4uLlA/T3BXy8f35Gh01jHT3x2Mu7D6ub5V8ERAAknJqEAKpU6MciFMMcjjN5DwlgtJSWKGY1GBrr8
+        xidUUZnYtncPAAWb3uvZvmC5OvVcT8EsRVKXFv5eaNQClqWzN61YdXRRwXQWlRX78AH45n4YwQXgNxgFtGXUWoU7BDHC3F8g+NbiCjEqEk
+        aoiIApAaz8Zfa1jxblYhBefpQCxQ1mZzhyQdXPKANaCMYI3ScS51xAIw2bqVXGHh8804vcAFlqYqpiAiiDcqymb6gjmlz48TqBZTBGINoD
+        4CIZ6mB4YD+kRCDwmgoaEMu0IS6RNqUyVmApVTJDiOiXMtidtInGHaxoqrs3/jeRCmFskrBTvcOke4dGt8iYjQZ2wegsS4hR0/2BK5j50R
+        EBPR9K+fWD4eWSla7fHaqc8y27UAQI0awbGvMARjJjEqzdSJ39Yuuverexp2lIBnGmZRJ3PSbqwTLLinx3btt/YA/sWTVvjMZEStRDA0XU
+        +mnzu1/7tANwbx68ey248faFaiqjavbdi58qJGqmQuIxBagnDrCYIRi9hoDZ88y0HmeIDOGsq1JdqkyiakQakGklIOphnFWr2nl+LH2i4D
+        jerFoLOmSmBXFibhYnovtRlBODNev5c61y5mzZi6F7BBBZpAgkyHIZFHWKL+lJpGwywmPVPSqqYrgWVAYSdUA04AAKAChc/LEqXHCyZlLc
+        uCCaESKWCoEpVGEiGjEaMQYbM8hOs0nUl1ETIgOs9hpr6JsOMEoC3A/aT/9iuc6voAto3095TpdWZO+mMVigOO49A+v55crDXo44w8Kjq6
+        KxauqE/WJGXUFmmZcJxoboJgvUtRDGFNATIBSDuWmletYefHV3hdeve0pWsHa1mb5/OSvP7z25vk953/+sWPCfQMwo3H24qY5Ta33rGhuX
+        dWytmHhvNq62qp0HCnQd3k4UzlO/tb/xBRIANHbHE/FCZKGQJ7/M34HlwUg7TAYgbsAAAAASUVORK5CYII=
+    </icon>
+
+    <properties>
+        <property key="Locale" type="attribute" required="true">
+            <caption>Locale</caption>
+            <category>Behaviour</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="Timezone" type="attribute" required="true">
+            <caption>Timzone</caption>
+            <category>Behaviour</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="microflow" type="microflow" required="false">
+            <caption>Microflow</caption>
+            <category>Behaviour</category>
+            <description>The microflow to be executed once the locale has been established.</description>
+            <returnType type="Void" />
+        </property>
+    </properties>
+</widget>
+
