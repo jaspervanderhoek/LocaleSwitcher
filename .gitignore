@@ -1,4 +1,8 @@
-test/javasource/
+test/javasource/*/proxies/*
+test/javasource/appcloudservices/
+test/javasource/system/
+test/javasource/core/
+test/javasource/com/
 test/deployment/
 test/.classpath
 test/.project
