@@ -18,14 +18,11 @@ import com.mendix.systemwideinterfaces.core.ILanguage;
 import com.mendix.webui.CustomJavaAction;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
-/**
- * 
- */
 public class CheckLanguage extends CustomJavaAction<IMendixObject>
 {
-	private String LocaleStr;
+	private java.lang.String LocaleStr;
 
-	public CheckLanguage(IContext context, String LocaleStr)
+	public CheckLanguage(IContext context, java.lang.String LocaleStr)
 	{
 		super(context);
 		this.LocaleStr = LocaleStr;
@@ -79,7 +76,7 @@ public class CheckLanguage extends CustomJavaAction<IMendixObject>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "CheckLanguage";
 	}

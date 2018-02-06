@@ -12,10 +12,7 @@ package localeswitcher.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
-/**
- * 
- */
-public class GetSessionTZOffset extends CustomJavaAction<Long>
+public class GetSessionTZOffset extends CustomJavaAction<java.lang.Long>
 {
 	public GetSessionTZOffset(IContext context)
 	{
@@ -23,10 +20,12 @@ public class GetSessionTZOffset extends CustomJavaAction<Long>
 	}
 
 	@Override
-	public Long executeAction() throws Exception
+	public java.lang.Long executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		return Long.valueOf( this.getContext().getSession().getTimeZone().getOffset( System.currentTimeMillis() ) );
+		
+		long offset = Long.valueOf( this.getContext().getSession().getTimeZone().getOffset( System.currentTimeMillis() ) );
+		return offset;
 		// END USER CODE
 	}
 
@@ -34,7 +33,7 @@ public class GetSessionTZOffset extends CustomJavaAction<Long>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "GetSessionTZOffset";
 	}

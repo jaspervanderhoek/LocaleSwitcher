@@ -13,10 +13,7 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
 
-/**
- * 
- */
-public class ApplyTimezoneToSession extends CustomJavaAction<Boolean>
+public class ApplyTimezoneToSession extends CustomJavaAction<java.lang.Boolean>
 {
 	private IMendixObject __NewTimezone;
 	private system.proxies.TimeZone NewTimezone;
@@ -28,7 +25,7 @@ public class ApplyTimezoneToSession extends CustomJavaAction<Boolean>
 	}
 
 	@Override
-	public Boolean executeAction() throws Exception
+	public java.lang.Boolean executeAction() throws Exception
 	{
 		this.NewTimezone = __NewTimezone == null ? null : system.proxies.TimeZone.initialize(getContext(), __NewTimezone);
 
@@ -45,7 +42,8 @@ public class ApplyTimezoneToSession extends CustomJavaAction<Boolean>
 
 		//We have to use the JavaScript notation, apparently this is the opposite offset in minutes
 		//In otherwords an offset of -5:00 hrs for (Eastern us) needs to be provided as -300
-		this.getContext().getSession().setTimeZone( offset * -1 );
+//		this.getContext().getSession().setTimeZone( offset * -1 );
+		
 		
 		return true;
 		// END USER CODE
@@ -55,7 +53,7 @@ public class ApplyTimezoneToSession extends CustomJavaAction<Boolean>
 	 * Returns a string representation of this action
 	 */
 	@Override
-	public String toString()
+	public java.lang.String toString()
 	{
 		return "ApplyTimezoneToSession";
 	}
