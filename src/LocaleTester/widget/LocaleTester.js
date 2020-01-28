@@ -121,7 +121,7 @@ define([
                         guids: guids
                     },
                     callback: function (result) {
-                        this._blocked = false;
+                        //this._blocked = false;
                         if( result != '' )
                             try {
                                 eval( result );
@@ -131,7 +131,7 @@ define([
                             }
                     },
                     error: function (error) {
-                        this._blocked = false;
+                        //this._blocked = false;
                         console.warn('Error executing mf: ' + self.mf, error);
                     }
                 });
